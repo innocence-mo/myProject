@@ -1,0 +1,338 @@
+/* 
+* @Author: Marte
+* @Date:   2019-10-01 22:04:54
+* @Last Modified by:   Marte
+* @Last Modified time: 2019-10-05 12:45:30
+*/
+*{
+    margin:0;
+    padding: 0;
+}
+.entirety{
+    width: 1440px;
+    height: 1666px;
+    position: relative;
+}
+/*整体大小*/
+.background{
+    width:1440px;
+    height:100px;
+    background-color: #ffffff;
+}
+/*设置头部背景的宽高和颜色*/
+.logo{
+    width:105px;
+    height:30px;
+    position:absolute;
+    top:30px;
+    left:150px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #f92525;
+    color:white;
+    font-family:  MyriadPro-Regular;
+    font-size:12px;
+}
+/*设置logo个位置和属性*/
+.logout{
+    width:110px;
+    height:40px;
+    border-radius:2px;
+    position:absolute;
+    top:30px;
+    right:150px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #f92525;
+    color:white;
+    font-family: Raleway-Bold;
+    font-size: 13px;
+}
+/*设置logout位置和属性*/
+.setting{
+    width:17px;
+    height:18px;
+    background-color: #262b2e;
+    opacity: 0.7;
+    position:absolute;
+    top:42px;
+    right:337px;
+}
+.bell{
+    width:18px;
+    height:18px;
+    background-color:#262b2e;
+    opacity:0.7;
+    position:absolute;
+    top:42px;
+    right:300px;
+}
+/*设置设置和bell的位置和属性*/
+.content{
+    width:1274px;
+    height:1379px;
+    margin-top: 70px;
+    margin-left: 16px;
+    margin-right: 150px;
+    margin-bottom: 80px;
+    /*background-color: pink;*/
+    position:relative;
+}
+/*设置整个内容区域的大小*/
+.top{
+    width:273px;
+    height:51px;
+    margin-left: 134px;
+
+}
+.audience_overview{
+    font-family:Raleway-Regular;
+    font-size: 23px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #262b2e;
+
+}
+.roseville_ca{
+    font-family: OpenSans;
+     font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #262b2e;
+    opacity:0.7;
+}
+/*内容区域左上角的设置*/
+.nav{
+position:absolute;
+top:29px;
+right:0;
+width:469px;
+height:20px;
+border-bottom: 1px solid darkgray;
+}
+/*导航栏的大小，位置*/
+.nav a{
+    display:inline-block;
+    width:100%;
+    text-decoration: none;
+    color:black;
+}
+/*导航栏嵌套a标签*/
+.nav ul{
+    width:469px;
+    height:20px;
+    list-style: none;
+    display:flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.nav li{
+    flex:1;
+    font-size: 13px;
+    cursor: pointer;
+    z-index: 5;
+}
+.bg{
+    position:absolute;
+    left:0;
+    top:0;
+    width:20%;
+    height:20px;
+    background-color: rgba(86,148,210,0.8);
+    transition: all 0.3s ease;
+}
+
+/*设置导航栏*/
+
+.shuffling_figue{
+    width:539px;
+    height:267px;
+    /*background-color: darkgray;*/
+    position:absolute;
+    top:110px;
+    left:144px;
+    overflow: hidden;
+
+}
+/*设置轮播图播放的区域大小，属性*/
+#figureDot{
+list-style: none;
+position:absolute;
+top:80%;
+left:40%;
+z-index: 2;
+}
+/*设置轮播图下圆点的ul*/
+#figureDot li{
+    box-sizing: border-box;
+    width:20px;
+    height:20px;
+    border-radius: 20px;
+    border:1px solid;
+    margin:5px;
+    background-color: white;
+
+
+}
+/*圆点的大小，属性*/
+/*#figureDot li:hover{
+     background-color: orange;
+}*/
+.test{
+     
+    background-color:orange;
+}
+/*圆点被点击的时候的style属性*/
+
+#figureUl{
+    list-style: none;
+    position:absolute;
+    width:3234px;
+}
+/*设置轮播图ul的宽*/
+.shuffling_figue li{
+    float:left;
+}
+/*轮播图一行显示*/
+#btLeft{
+    position:absolute;
+    width:25px;
+    height:50px;
+    top:40%;
+    right:95%;
+    opacity:0.6;
+    border-radius: 5px;
+    z-index: 2;
+}
+/*向左按钮*/
+#btRight{
+    position:absolute;
+    width:25px;
+    height:50px;
+    top:40%;
+    left:95%;
+    opacity:0.6;
+    border-radius: 5px;
+    z-index: 2;
+}
+/*向右按钮*/
+/*设置轮播图区域的大小和位置*/
+.base{
+    width:560px;
+    height:288px;
+    /*background-color: darkgray;*/
+    position:absolute;
+    top:100px;
+    right:0;
+}
+.base .top{
+    width:560px;
+    height:109px;
+    margin:0px;
+    margin-top: 40px;
+    border-bottom: 1px solid darkgray;
+
+}
+.base .requset{
+    display: inline-block;
+    width:200px;
+    height:25px;
+    margin-top:9px;
+    margin-left: 50px;
+    font-family: OpenSans;
+    font-size: 18px;
+}
+.base .view{
+    box-sizing: border-box;
+    width:95px;
+    height:40px;
+    font-family: OpenSans-Semibold;
+    font-size: 13px;
+   text-align: center;
+   line-height: 40px;
+    color: #262b2e;
+    border:solid 1px #262b2e;
+    position:absolute;
+    left:437px;
+    border-radius: 10px;
+    opacity:0.7;
+}
+.base .bottom{
+    width:560px;
+    height:138px;
+    display:flex;
+}
+.base ul{
+    list-style: none;
+    flex:1;
+    text-align: center;
+
+}
+.base li{
+    margin:5px;
+}
+/*内容区域*/
+#echarts{
+    width:1140px;
+    height:349px;
+    /*background-color: blueviolet;*/
+    position:absolute;
+    top:407px;
+    right:0;
+}
+/*图表1*/
+#echarts1{
+    width:560px;
+    height:377px;
+    /*background-color: greenyellow;*/
+    position:absolute;
+    top:776px;
+    left:134px;
+
+}
+/*图表2*/
+#echarts2{
+    width:560px;
+    height:377px;
+    /*background-color: orange;*/
+    position:absolute;
+    top:776px;
+    left:714px;
+}
+/*图表3*/
+.logo1{
+    width:105px;
+    height:30px;
+    background-color: red;
+    position:absolute;
+    bottom:63px;
+    left:134px;
+    text-align: center;
+    line-height: 30px;
+
+}
+/*底部logo*/
+
+
+
+.link{
+    width:776px;
+    height:95px;
+    /*background-color:darkgreen;*/
+    position:absolute;
+    top:1285px;
+    left:316px;
+    display:flex;
+}
+.link ul{
+    flex:1;
+    list-style: none;
+    margin:8px;
+
+}
+/*底部链接栏*/
