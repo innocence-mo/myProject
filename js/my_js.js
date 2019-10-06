@@ -2,18 +2,18 @@
 * @Author: Marte
 * @Date:   2019-10-01 22:05:24
 * @Last Modified by:   Marte
-* @Last Modified time: 2019-10-05 13:19:23
+* @Last Modified time: 2019-10-06 13:50:32
 */
 
 $(document).ready(function(){
     $(".nav ul li").hover(function(event){
 
         $(".bg").css("left",parseFloat($(".active").eq(0)[0].offsetLeft)+'px')
-        $(".bg").css("width",parseFloat($(".active").width())+'px');
+        // $(".bg").css("width",parseFloat($(".active").width())+'px');
     })
     $(".nav ul li").click(function(){
         $(".bg").css("left",parseFloat($(this)[0].offsetLeft)+'px');
-        $(".bg").css("width",parseFloat($(this).width())+'px');
+        // $(".bg").css("width",parseFloat($(this).width())+'px');
     })
     $(".nav ul li ").click(function(){
         $(this).addClass("active").siblings().removeClass("active")
@@ -28,7 +28,7 @@ $(document).ready(function(){
     let idx = 0;
     let $figureUl = $("#figureUl");
     let $shuffling_figue=$(".shuffling_figue");
-    $("#dotLi1").css("background-color","orange");
+    $("#dotLi1").css("background-color","white");
     // 每隔一段时间让索引+1，实现轮播
     let timer=setInterval(autoPlay, 2000);
     // 鼠标移入的图片区域，停止定时器
@@ -77,21 +77,34 @@ $(document).ready(function(){
     //判断轮播图圆点索引，每次点击圆点，按钮，定时器，都先使用函数判断一次
      let $dotLi=$(".dotLi");
        function judgeDot(){       
-       $(".dotLi").css("background-color","white");
+       $(".dotLi").css("background-color","darkgray");
+       $(".dotLi").css("height","20px");
+       $(".dotLi").removeClass('backPosition');
+    
             if(idx==5||idx==0){
-                $("#dotLi1").css("background-color","orange");
+                $("#dotLi1").css("background-color","white");
+                 $("#dotLi1").css("height","25px");
+                 $("#dotLi1").addClass('backPosition')
             }
             if(idx==1){                    
-                 $("#dotLi2").css("background-color","orange");
+                  $("#dotLi2").css("background-color","white");
+                  $("#dotLi2").css("height","25px");
+                  $("#dotLi2").addClass('backPosition')
             }
             if(idx==2){                             
-                $("#dotLi3").css("background-color","orange");
+                 $("#dotLi3").css("background-color","white");
+                 $("#dotLi3").css("height","25px");
+                 $("#dotLi3").addClass('backPosition')
             }
             if(idx==3){                  
-                $("#dotLi4").css("background-color","orange");
+                 $("#dotLi4").css("background-color","white");
+                 $("#dotLi4").css("height","25px");
+                 $("#dotLi4").addClass('backPosition')
             }
             if(idx==4){                  
-                 $("#dotLi5").css("background-color","orange");
+                 $("#dotLi5").css("background-color","white");
+                 $("#dotLi5").css("height","25px");
+                 $("#dotLi5").addClass('backPosition')
             }
         }        
 });
