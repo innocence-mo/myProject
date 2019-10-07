@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2019-10-01 22:04:54
 * @Last Modified by:   Marte
-* @Last Modified time: 2019-10-07 00:25:40
+* @Last Modified time: 2019-10-07 09:54:38
 */
 *{
     margin:0;
@@ -11,6 +11,7 @@
 .entirety{
     width: 1440px;
     height: 1666px;
+    margin:0px auto;
     position: relative;
     background-color:rgba(169, 169, 169, 0.2);
 }
